@@ -84,7 +84,7 @@ body {
 }
 
 .stats-card .trend {
-    color: #22c55e;
+    color: #59CA26;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@ body {
 }
 
 .welcome-section {
-    background: white;
+    background: rgb(54, 236, 54);
     border-radius: 15px;
     padding: 24px;
     margin-bottom: 30px;
