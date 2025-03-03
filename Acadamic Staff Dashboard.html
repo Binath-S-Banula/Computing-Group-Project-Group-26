@@ -11,11 +11,11 @@
     </head>
     <body>
         <header>
-            <div class="header-container">
+            <div class="as-header-container">
               
-                        <a class="logo-icon" href="#"> <img src="NSBM-LOGO.png" alt="NSBM Logo" height="65"> </a>
+                        <a class="as-logo-icon" href="#"> <img src="NSBM-LOGO.png" alt="NSBM Logo" height="65"> </a>
                     
-                    <div class="n-link-text"><h4><span>N</span>-LINK</h4></div>
+                    <div class="as-n-link-text"><h4><span>N</span>-LINK</h4></div>
                
                 <nav>
                     <ul>
@@ -28,61 +28,61 @@
                     </ul>
                 </nav>
                 <div class="auth-buttons">
-                    <a href="#" class="auth-button login-btn">Profile</a>
-                    <a href="#" class="auth-button signup-btn">Logout</a>
+                    <a href="#" class="as-auth-button as-login-btn">Profile</a>
+                    <a href="#" class="as-auth-button as-signup-btn">Logout</a>
                 </div>
             </div>
         </header>
         <div class="container py-4">
             
-            <div class="welcome-section">
+            <div class="as-welcome-section">
                 <h1>Welcome to Academic Staff Dashboard!</h1>
                 <p id="currentTime" class="h4"></p>
             </div>
 
-            <div class="time-section">
+            <div class="as-time-section">
                 <h2>Current Time</h2>
                 <div id="digitalClock" class="h3"></div>
             </div>
 
-            <div class="today-schedule">
+            <div class="as-today-schedule">
                 <h2>Today's Schedule</h2><br>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="course-card">
-                            <div class="course-title">PUSL-2022</div>
-                            <div class="course-desc">Introduction to IoT</div>
-                            <div class="course-time">FOC</div>
-                            <div class="course-time">09.00 - 13.00</div>
-                            <div class="course-room">C2-009</div>
+                        <div class="as-course-card">
+                            <div class="as-course-title">PUSL-2022</div>
+                            <div class="as-course-desc">Introduction to IoT</div>
+                            <div class="as-course-time">FOC</div>
+                            <div class="as-course-time">09.00 - 13.00</div>
+                            <div class="as-course-room">C2-009</div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="course-card">
-                            <div class="course-title">PUSL-2023</div>
-                            <div class="course-desc">Mobile App Development</div>
-                            <div class="course-time">FOC</div>
-                            <div class="course-time">14.00 - 17.00</div>
-                            <div class="course-room">C1-002</div>
+                        <div class="as-course-card">
+                            <div class="as-course-title">PUSL-2023</div>
+                            <div class="as-course-desc">Mobile App Development</div>
+                            <div class="as-course-time">FOC</div>
+                            <div class="as-course-time">14.00 - 17.00</div>
+                            <div class="as-course-room">C1-002</div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="course-card">
-                            <div class="course-title">PUSL-2021</div>
-                            <div class="course-desc">Computing Group project</div>
-                            <div class="course-time">FOB</div>
-                            <div class="course-time">09.00 - 12.00</div>
-                            <div class="course-room">C1-004</div>
+                        <div class="as-course-card">
+                            <div class="as-course-title">PUSL-2021</div>
+                            <div class="as-course-desc">Computing Group project</div>
+                            <div class="as-course-time">FOB</div>
+                            <div class="as-course-time">09.00 - 12.00</div>
+                            <div class="as-course-room">C1-004</div>
                         </div>
                     </div>
                 </div>
 
                     <div class="text-center">
-                        <a href="#" class="see-more">See more...</a>
+                        <a href="#" class="as-see-more">See more...</a>
                     </div>
 
-                    <div class="timetable">
+                    <div class="as-timetable">
                         <h2>Weekly Schedule</h2>
                         <table class="table table-hover">
                             <thead>
@@ -126,7 +126,7 @@
             </div>
         </div>
 
-        <div class="action-buttons text-center">
+        <div class="as-action-buttons text-center">
             <button class="btn btn-primary" onclick="openNotesModal()">Add Notes</button>
             <button class="btn btn-success" onclick="openAppointmentModal()">Make an Appointment</button>
         </div>
@@ -136,7 +136,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Add Notes</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <buttontype="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <textarea class="form-control" rows="5" placeholder="Enter your notes here..."></textarea>
@@ -154,17 +154,17 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Make an Appointment</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <buttontype="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <form>
                             <div class="mb-3">
                                 <label class="form-label">Date</label>
-                                <input type="date" class="form-control">
+                                <inputtype="date" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Time</label>
-                                <input type="time" class="form-control">
+                                <inputtype="time" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Purpose</label>
@@ -190,9 +190,9 @@
                     <p class="mt-3">Communication Platform for NSBM.<br>
                     NSBM Green University operates as a self-financed university and is renowned for its world-class academic offerings.</p>
                     <div class="social-icons mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <ahref="#"><i class="fab fa-facebook-f"></i></a>
+                        <ahref="#"><i class="fab fa-instagram"></i></a>
+                        <ahref="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="col-md-3">
