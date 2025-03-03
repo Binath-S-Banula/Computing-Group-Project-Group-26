@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Academic Staff Dashboard</title>
+        <link href="Acadamic Staff Dashboard.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 
     </head>
     <body>
@@ -122,6 +125,119 @@
                     </div>
             </div>
         </div>
+
+        <div class="action-buttons text-center">
+            <button class="btn btn-primary" onclick="openNotesModal()">Add Notes</button>
+            <button class="btn btn-success" onclick="openAppointmentModal()">Make an Appointment</button>
+        </div>
+
+        <div class="modal fade" id="notesModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Notes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control" rows="5" placeholder="Enter your notes here..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save Notes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="appointmentModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Make an Appointment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Time</label>
+                                <input type="time" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Purpose</label>
+                                <input type="text" class="form-control" placeholder="Enter purpose of appointment">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Schedule</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-title">N-Link</div>
+                    <div>NSBM Green University.</div>
+                    <p class="mt-3">Communication Platform for NSBM.<br>
+                    NSBM Green University operates as a self-financed university and is renowned for its world-class academic offerings.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">Featured List</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Student Dashboard</a></li>
+                        <li><a href="#">Academic Dashboard</a></li>
+                        <li><a href="#">Appointments</a></li>
+                        <li><a href="#">Timetable</a></li>
+                        <li><a href="#">Career Guidance Unit</a></li>
+                        <li><a href="#">Medical Center</a></li>
+                        <li><a href="#">Clubs & Societies</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Admin Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-title">Contact Us</div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt me-2"></i> Mahenwaththa, Pitipana, Homagama, Sri Lanka
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone me-2"></i> +94 11 544 5000
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone me-2"></i> +94 71 244 5000
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope me-2"></i> inquiries@nsbm.ac.lk
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <small>Copyright NSBM 2025. Designed and Developed by Group-76 NSBM</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="Acadamic Staff Dashboard.js"></script>
 
     </body>
 </html>
