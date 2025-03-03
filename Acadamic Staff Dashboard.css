@@ -89,3 +89,27 @@ nav ul li a:hover {
 .signup-btn:hover {
     background: #008f5b;
 }
+
+.welcome-section {
+    background: linear-gradient(to right, #004d99, #064ade);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.time-section {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.today-schedule {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #4e54c8;
+}
