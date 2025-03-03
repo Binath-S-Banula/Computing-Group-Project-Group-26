@@ -1,227 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medical Center - N-Care</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCare - Medical Center</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-      body {
-        padding-top: 136px; /* Adjusted to accommodate the new header */
-        color: #333;
-      }
-      .jumbotron {
-        background-color: #e9ecef;
-      }
-      .medical-info {
-        margin-bottom: 20px;
-      }
-      .navbar-dark .navbar-brand,
-      .navbar-dark .navbar-nav .nav-link {
-        color: white;
-      }
-      .navbar-dark .navbar-brand:hover,
-      .navbar-dark .navbar-nav .nav-link:hover {
-        color: #59ca26;
-      }
-      .bg-dark {
-        background-color: #0d5fbd !important;
-      }
-      .btn-primary,
-      .btn-success {
-        background-color: #59ca26;
-        border-color: #59ca26;
-        color: white;
-      }
-      .btn-primary:hover,
-      .btn-success:hover {
-        background-color: #4caf50;
-        border-color: #4caf50;
-      }
-      .card {
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .card-title {
-        color: #0d5fbd; /* Blue for card titles */
-      }
-      .list-group-item {
-        background-color: white;
-      }
-
-      /* New Header Styles */
-      nav.navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #0d5fbd;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-      }
-      nav.navbar .logo img {
-        height: 80px;
-        width: 110px;
-      }
-      nav.navbar .nav-links {
-        list-style: none;
-        display: flex;
-      }
-      nav.navbar .nav-links li {
-        margin-left: 20px;
-      }
-      nav.navbar .nav-links a {
-        color: white;
-        text-decoration: none;
-      }
-      nav.navbar .logout-btn {
-        background-color: #59ca26;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-      }
-
-      /* Footer Styles */
-      footer {
-        background-color: #f8f9fa;
-        padding: 40px 0;
-        margin-top: 40px;
-      }
-      .footer-title {
-        font-weight: bold;
-        margin-bottom: 15px;
-        color: #0d5fbd;
-      }
-      .contact-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-      .contact-item i {
-        margin-right: 10px;
-      }
-      .social-icons a {
-        margin-right: 10px;
-        color: #0d5fbd;
-      }
+        /* Custom CSS */
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #0056b3;
+            --dark-blue: #0a2642;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        
+        .btn-logout {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+        
+        .main-title {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .main-title h1 {
+            color: #0056b3;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        
+        .banner-section {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .banner-content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .banner-content p {
+            font-size: 1.2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .notice-box {
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .notice-box h3 {
+            margin-bottom: 0;
+            font-size: 1.5rem;
+        }
+        
+        .btn-details {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+        
+        .opportunity-box {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 30px 20px;
+            color: white;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .opportunity-box h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .btn-check, .btn-book {
+            background-color: white;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        .footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+        
+        .footer h4 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer li {
+            margin-bottom: 10px;
+        }
+        
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            margin-right: 10px;
+            color: white;
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
     </style>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img
-          src="Public\download.png"
-          alt="University Logo"
-          height="80"
-          width="110"
-        />
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Timetable</a></li>
-        <li><a href="#">Announcements</a></li>
-        <li><a href="#">Appointments</a></li>
-      </ul>
-      <button class="logout-btn">Log Out</button>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="public\download.png" alt="NSBM Green University" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Timetable</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Appointments</a>
+                    </li>
+                </ul>
+                <button class="btn btn-logout">Log Out</button>
+            </div>
+        </div>
     </nav>
 
-    <div class="container mt-4">
-      <div class="jumbotron">
-        <h1 class="display-4">Medical Center</h1>
-        <p class="lead">Welcome to the NSBM Green University Medical Center.</p>
-      </div>
+    <div class="container">
+        <!-- Main Title -->
+        <div class="main-title">
+            <h1>NCare - Medical Center</h1>
+        </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">On Going Appointments</h5>
-              <p class="card-text">
-                View your current appointments and manage them.
-              </p>
-              <a href="#" class="btn btn-primary">View Appointments</a>
+        <!-- Banner Section -->
+        <div class="banner-section">
+            <!-- Background Image Placeholder -->
+            <img src="public\c1.jpg" alt="Medical Center" class="banner-image">
+            <div class="banner-content">
+                <h1>NCare - Medical Center</h1>
+                <p>NSBM - We are always for you...</p>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Meet Your Doctor</h5>
-              <p class="card-text">
-                Schedule appointments with your preferred doctor.
-              </p>
-              <a href="#" class="btn btn-primary">Book Appointment</a>
+
+        <!-- Special Notices Section -->
+        <div class="section-container">
+            <h2 class="section-title">Special Notices</h2>
+            <div class="notice-box">
+                <h3>Not for Today...</h3>
+                <button class="btn btn-details" id="moreDetailsBtn">More Details</button>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Notices</h5>
-              <p class="card-text">
-                Stay updated with important announcements and health advisories.
-              </p>
-              <a href="#" class="btn btn-primary">View Notices</a>
+
+        <!-- Opportunities Section -->
+        <div class="section-container">
+            <h2 class="section-title">Your Opportunities</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="opportunity-box">
+                        <h2>Doctor's Schedule</h2>
+                        <button class="btn btn-check" id="checkScheduleBtn">Check</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="opportunity-box">
+                        <h2>Make an Appointment</h2>
+                        <button class="btn btn-book" id="bookAppointmentBtn">Book</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="footer-title">N-Link</div>
-            <div>NSBM Green University.</div>
-            <p class="mt-3">
-              Communication Platform for NSBM.<br />
-              NSBM Green University operates as a self-financed university and
-              is renowned for its world-class academic offerings.
-            </p>
-            <div class="social-icons mt-3">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h4>N-Link</h4>
+                    <p>NSBM Green University.</p>
+                    <p>Communication Platform for NSBM.</p>
+                    <p>NSBM Green University operates as a self-financed university and is renowned for its world-class academic offerings.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>Featured List</h4>
+                    <ul>
+                        <li><a href="#">Student Dashboard</a></li>
+                        <li><a href="#">Academic Dashboard</a></li>
+                        <li><a href="#">Appointments</a></li>
+                        <li><a href="#">Timetable</a></li>
+                        <li><a href="#">Career Guidance Unit</a></li>
+                        <li><a href="#">Medical Center</a></li>
+                        <li><a href="#">Clubs & Societies</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Admin Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>Contact Us</h4>
+                    <p>Mahenwaththa, Pitipana, Homagama, Sri Lanka</p>
+                    <p>+94 11 544 5000</p>
+                    <p>+94 71 244 5000</p>
+                    <p>inquiries@nsbm.ac.lk</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="footer-title">Contact Us</div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt me-2"></i> Mahenwaththa, Pitipana,
-              Homagama, Sri Lanka
+            <div class="copyright text-center">
+                <p>Copyright NSBM 2025. Designed and Developed by Group-75 NSBM</p>
             </div>
-            <div class="contact-item">
-              <i class="fas fa-phone me-2"></i> +94 11 544 5000
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-phone me-2"></i> +94 71 244 5000
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-envelope me-2"></i> inquiries@nsbm.ac.lk
-            </div>
-          </div>
         </div>
-        <div class="text-center mt-4">
-          <small
-            >Copyright NSBM 2025. Designed and Developed by Group-76 NSBM</small
-          >
-        </div>
-      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // JavaScript for button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // More Details Button
+            document.getElementById('moreDetailsBtn').addEventListener('click', function() {
+                alert('Notice details will be shown here. This functionality can be expanded as needed.');
+            });
+            
+            // Check Schedule Button
+            document.getElementById('checkScheduleBtn').addEventListener('click', function() {
+                window.location.href = "#doctorSchedule";
+                alert('Doctor\'s schedule will be displayed here. You can modify this to redirect to a specific page or display a modal.');
+            });
+            
+            // Book Appointment Button
+            document.getElementById('bookAppointmentBtn').addEventListener('click', function() {
+                window.location.href = "#bookAppointment";
+                alert('Appointment booking form will be displayed here. You can modify this to redirect to a specific page or display a modal.');
+            });
+        });
+    </script>
+</body>
 </html>

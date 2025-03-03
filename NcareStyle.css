@@ -1,101 +1,215 @@
-body {
-  padding-top: 136px; /* Adjusted to accommodate the new header */
-  color: #333;
-}
-.jumbotron {
-  background-color: #e9ecef;
-}
-.medical-info {
-  margin-bottom: 20px;
-}
-.navbar-dark .navbar-brand,
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-}
-.navbar-dark .navbar-brand:hover,
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #59ca26;
-}
-.bg-dark {
-  background-color: #0d5fbd !important;
-}
-.btn-primary,
-.btn-success {
-  background-color: #59ca26;
-  border-color: #59ca26;
-  color: white;
-}
-.btn-primary:hover,
-.btn-success:hover {
-  background-color: #4caf50;
-  border-color: #4caf50;
-}
-.card {
-  border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.card-title {
-  color: #0d5fbd; /* Blue for card titles */
-}
-.list-group-item {
-  background-color: white;
+/* Custom CSS for NCare Medical Center */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #0056b3;
+  --dark-blue: #0a2642;
 }
 
-/* New Header Styles */
-nav.navbar {
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.btn-logout {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.main-title {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-title h1 {
+  color: #0056b3;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.banner-section {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.notice-box {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #0d5fbd;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-nav.navbar .logo img {
-  height: 80px;
-  width: 110px;
-}
-nav.navbar .nav-links {
-  list-style: none;
-  display: flex;
-}
-nav.navbar .nav-links li {
-  margin-left: 20px;
-}
-nav.navbar .nav-links a {
-  color: white;
-  text-decoration: none;
-}
-nav.navbar .logout-btn {
-  background-color: #59ca26;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #f8f9fa;
-  padding: 40px 0;
+.notice-box h3 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.btn-details {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.opportunity-box {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.opportunity-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.btn-check, .btn-book {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 40px 0 20px;
   margin-top: 40px;
 }
-.footer-title {
+
+.footer h4 {
+  margin-bottom: 20px;
   font-weight: bold;
-  margin-bottom: 15px;
-  color: #0d5fbd;
 }
-.contact-item {
-  display: flex;
-  align-items: center;
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
   margin-bottom: 10px;
 }
-.contact-item i {
-  margin-right: 10px;
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
 }
+
+.footer a:hover {
+  color: white;
+}
+
 .social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
   margin-right: 10px;
-  color: #0d5fbd;
+  color: white;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .banner-content h1 {
+      font-size: 2rem;
+  }
+  
+  .notice-box {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .notice-box button {
+      margin-top: 15px;
+  }
 }
