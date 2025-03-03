@@ -24,3 +24,11 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 updateTime();
+
+function openNotesModal() {
+    new bootstrap.Modal(document.getElementById('notesModal')).show();
+}
+
+function openAppointmentModal() {
+    new bootstrap.Modal(document.getElementById('appointmentModal')).show();
+}
