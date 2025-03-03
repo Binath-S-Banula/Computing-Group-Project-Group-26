@@ -113,3 +113,58 @@ nav ul li a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-left: 4px solid #4e54c8;
 }
+.course-card {
+    background-color: #159a51;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.course-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+.course-desc {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-time, .course-room {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.see-more {
+    background-color: #008f5b;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.timetable {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.action-buttons .btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+}
