@@ -9,65 +9,6 @@ body {
     background-color: #f5f5f5;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #044517;
-    color: white;
-    padding: 0.5rem 2rem;
-}
-
-.logo {
-    height: 50px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 0.5rem;
-}
-
-.nav-links a.active, .nav-links a:hover {
-    color: #7ac142;
-}
-
-.nav-buttons {
-    display: flex;
-    align-items: center;
-}
-
-.hamburger-menu {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    display: none;
-}
-
-.logout-btn {
-    background-color: #7ac142;
-    color: white;
-    border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
-}
 
 main {
     max-width: 1200px;

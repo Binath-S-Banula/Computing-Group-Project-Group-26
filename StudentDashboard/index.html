@@ -5,28 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSBM Student Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navstyle.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="data:image/png;base64,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"  class="logo">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Timetable</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Appointments</a></li>
-            </ul>
-        </nav>
-        <div class="nav-buttons">
-            <button class="hamburger-menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <button class="logout-btn">Log Out</button>
-        </div>
-    </header>
+        <!-- navbar start-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://www.nsbm.ac.lk/">
+                <img src="Images/NSBM Logo 2.png" alt="NSBM Logo" class="nav_logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#scroll-btn"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="scroll-btn">
+                <ul
+                  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex justify-content-between"
+                  style="--bs-scroll-height: 100px; width: 80%"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Timetable</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Anouncements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Appointments</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      See more
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+      
+                <button class="btn btn-success btn-lg" type="submit">LogOut</button>
+              </div>
+            </div>
+          </nav>
+      
+          <!--navbar end-->
 
     <main>
         <div class="dashboard-header">
