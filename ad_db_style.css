@@ -158,7 +158,7 @@ body {
 }
 
 .stats-card:hover {
-    background-color: #4a9a11;
+    background-color:#4a9a11;
     transform: translateY(-5px);
 }
 
@@ -202,19 +202,67 @@ body {
   font-weight: bold;
 }
 
-.search-bar {
-    background: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+.container {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-.search-input {
-    border: none;
-    width: 100%;
-    padding: 8px;
-    outline: none;
+.title {
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(to bottom, #0052cc, #003b99);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ddd;
+} 
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 * {
