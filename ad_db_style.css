@@ -146,12 +146,13 @@ body {
 
 .main-content {
     padding: 30px;
+    color:#0D5FBD;
 }   
 
 
 
 .stats-card {
-    background: white;
+    background: #59CA26;
     border-radius: 15px;
     padding: 24px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -174,12 +175,12 @@ body {
 .stats-card .number {
     font-size: 32px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: #0D5FBD;
     margin-bottom: 0;
 }
 
 .stats-card .trend {
-    color: #59CA26;
+    color: black;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -187,7 +188,9 @@ body {
 }
 
 .welcome-section {
-    background: #0D5FBD;
+    background: white;
+    border-style: solid;
+    border-color: #0D5FBD; 
     border-radius: 15px;
     padding: 24px;
     margin-bottom: 30px;
