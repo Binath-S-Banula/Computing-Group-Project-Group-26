@@ -149,6 +149,7 @@ body {
     color:#0D5FBD;
 } 
 
+/* stats cards */
 .stats-card {
     background: #59CA26;
     border-radius: 15px;
@@ -186,7 +187,8 @@ body {
     gap: 5px;
 }
 
-.welcome-section {
+/* Admin dashboard section */
+.admindashboard-section {
     background: white; 
     border-radius: 15px;
     padding: 24px;
@@ -196,12 +198,14 @@ body {
 }
 
 .mb-0 {
-  text-decoration: underline;
   font-size: 35px;
   font-style: normal;
   font-weight: bold;
 }
 
+/*--------------------------------------
+ ------Admin duties section CSS start---
+ -------------------------------------*/
 .container {
   background: white;
   padding: 30px;
@@ -225,6 +229,7 @@ body {
   justify-content: center;
 }
 
+/* card styling */
 .card {
   background: linear-gradient(to bottom, #0052cc, #003b99);
   color: white;
@@ -238,6 +243,7 @@ body {
 
 .card:hover {
   transform: scale(1.05);
+  
 }
 
 h3 {
@@ -245,6 +251,7 @@ h3 {
   margin-bottom: 15px;
 }
 
+/* Click Here botton */
 .btn {
   background: white;
   color: black;
@@ -257,13 +264,18 @@ h3 {
 }
 
 .btn:hover {
+  color: #f1c40f;
   background: #ddd;
+  text-decoration: underline;
 } 
 
 h4 {
   font-size: 18px;
   margin-bottom: 15px;
-}
+} 
+/*----------------------------------------------
+----------Admin duties section CSS end----------
+----------------------------------------------*/
 
 * {
     margin: 0;
