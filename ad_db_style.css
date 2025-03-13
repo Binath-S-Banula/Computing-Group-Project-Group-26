@@ -97,6 +97,7 @@ body {
     cursor: pointer;
 }
 
+/* logout-botton */
 .logout-btn {
     background-color: #59CA26;
     color: white;
@@ -252,7 +253,7 @@ h3 {
 }
 
 /* Click Here botton */
-.btn {
+.bttn {
   background: white;
   color: black;
   font-weight: bold;
@@ -263,7 +264,7 @@ h3 {
   transition: 0.3s;
 }
 
-.btn:hover {
+.bttn:hover {
   color: #f1c40f;
   background: #ddd;
   text-decoration: underline;
