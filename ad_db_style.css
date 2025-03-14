@@ -97,6 +97,7 @@ body {
     cursor: pointer;
 }
 
+/* logout-botton */
 .logout-btn {
     background-color: #59CA26;
     color: white;
@@ -146,12 +147,12 @@ body {
 
 .main-content {
     padding: 30px;
-}   
+    color:#0D5FBD;
+} 
 
-
-
+/* stats cards */
 .stats-card {
-    background: white;
+    background: #59CA26;
     border-radius: 15px;
     padding: 24px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -159,6 +160,7 @@ body {
 }
 
 .stats-card:hover {
+    background-color:#4a9a11;
     transform: translateY(-5px);
 }
 
@@ -174,40 +176,107 @@ body {
 .stats-card .number {
     font-size: 32px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: #0D5FBD;
     margin-bottom: 0;
 }
 
 .stats-card .trend {
-    color: #59CA26;
+    color: black;
     font-size: 14px;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.welcome-section {
-    background: #0D5FBD;
+/* Admin dashboard section */
+.admindashboard-section {
+    background: white; 
     border-radius: 15px;
     padding: 24px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
-.search-bar {
-    background: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+.mb-0 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: bold;
 }
 
-.search-input {
-    border: none;
-    width: 100%;
-    padding: 8px;
-    outline: none;
+/*--------------------------------------
+ ------Admin duties section CSS start---
+ -------------------------------------*/
+.container {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
+
+.title {
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* card styling */
+.card {
+  background: linear-gradient(to bottom, #0052cc, #003b99);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Click Here botton */
+.bttn {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bttn:hover {
+  color: #f1c40f;
+  background: #ddd;
+  text-decoration: underline;
+} 
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+} 
+/*----------------------------------------------
+----------Admin duties section CSS end----------
+----------------------------------------------*/
 
 * {
     margin: 0;
