@@ -1,4 +1,4 @@
-const signupBtn = document.querySelector('.as-signup-btn');
+const signupBtn = document.querySelector('.btn-lg');
 if (signupBtn) {
     signupBtn.addEventListener('click', function() {
         if (confirm('Are you sure you want to log out?')) {
@@ -6,13 +6,13 @@ if (signupBtn) {
         }
     });
 }
-
+/*
 const loginBtn = document.querySelector('.as-login-btn');
 if (loginBtn) {
     loginBtn.addEventListener('click', function() {
         alert('Welcome to your profile');
     });
-}
+}*/
 
 function updateTime() {
     const now = new Date();
