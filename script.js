@@ -1,6 +1,6 @@
  // Mobile menu toggle
  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
+    const menuToggle = document.getElementById('cu-menuToggle');
     const navMenu = document.getElementById('navMenu');
     
     menuToggle.addEventListener('click', function() {
@@ -8,13 +8,13 @@
     });
  });  
     // Session Calendar button
-    const sessionBtn = document.querySelector('.session-btn');
+    const sessionBtn = document.querySelector('.cu-session-btn');
     sessionBtn.addEventListener('click', function() {
         alert('Opening Session Calendar');
     });
     
     // More Details buttons
-    const detailsBtns = document.querySelectorAll('.details-btn');
+    const detailsBtns = document.querySelectorAll('.cu-details-btn');
     detailsBtns.forEach(function(btn) {
         btn.addEventListener('click', function() {
             const sessionName = this.parentElement.querySelector('.session-name').textContent;
@@ -23,7 +23,7 @@
     });
     
     // Logout button
-    const logoutBtn = document.querySelector('.logout-btn');
+    const logoutBtn = document.querySelector('.cu-logout-btn');
     logoutBtn.addEventListener('click', function() {
         if (confirm('Are you sure you want to log out?')) {
             alert('You have been logged out successfully!');
@@ -57,7 +57,7 @@ document.getElementById('appointmentForm').onsubmit = function(event) {
 // CV Upload functionality
 const cvPreview = document.getElementById('cvPreview');
 const cvFile = document.getElementById('cvFile');
-const uploadProgress = document.getElementById('uploadProgress');
+const uploadProgress = document.getElementById('cu-uploadProgress');
 const uploadStatus = document.getElementById('uploadStatus');
 
 // Drag and drop functionality

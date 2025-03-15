@@ -14,105 +14,162 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <img src="images.png" alt="NSBM Logo" class="logo">
+
+    <!-- navbar start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.nsbm.ac.lk/">
+            <img src="Images/NSBM Logo 2.png" alt="NSBM Logo" class="nav_logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#scroll-btn"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="scroll-btn">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex justify-content-between"
+              style="--bs-scroll-height: 100px; width: 80%"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Timetable</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Anouncements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Appointments</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  See more
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-success cu-logout-btn">Logout</a>
+  
+            <!--<button class="btn btn-success btn-lg" type="submit">LogOut</button>-->
+          </div>
+        </div>
+      </nav>
+
+    <!-- Header 
+    <header class="cu-header">
+        <div class="cu-header-container">
+            <img src="images.png" alt="NSBM Logo" class="cu-logo">
             
-            <button class="menu-toggle" id="menuToggle">
+            <button class="cu-menu-toggle" id="cu-menuToggle">
                 <i class="fas fa-bars"></i>
             </button>
             
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Timetable</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Announcements</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Appointments</a></li>
+            <ul class="cu-nav-menu" id="navMenu">
+                <li class="cu-nav-item"><a href="#" class="cu-nav-link">Home</a></li>
+                <li class="cu-nav-item"><a href="#" class="cu-nav-link">Timetable</a></li>
+                <li class="cu-nav-item"><a href="#" class="cu-nav-link">Announcements</a></li>
+                <li class="cu-nav-item"><a href="#" class="cu-nav-link">Appointments</a></li>
             </ul>
             
-            <button class="logout-btn">Log Out</button>
+            <button class="cu-logout-btn">Log Out</button>
         </div>
-    </header>
+    </header> -->
 
-    <div class="container">
+    <div class="cu-container">
         <!-- Title Card -->
-        <div class="title-card">
-            <h1 class="title-text">Career Guidance Unit</h1>
+        <div class="cu-title-card">
+            <h1 class="cu-title-text">Career Guidance Unit</h1>
         </div>
         
         <!-- Banner -->
-        <div class="banner-container">
-            <img src="14-jpg.webp" alt="NSBM Career Fair 2024" class="banner-img">
-            <div class="banner-overlay">
-                <h2 class="banner-title">NFORCE – NSBM for Career & Entrepreneurship</h2>
-                <p class="banner-subtitle"><a href="#" class="banner-link">NSBM</a> - NFORCE – NSBM for Career & Entrepreneurship</p>
+        <div class="cu-banner-container">
+            <img src="14-jpg.webp" alt="NSBM Career Fair 2024" class="cu-banner-img">
+            <div class="cu-banner-overlay">
+                <h2 class="cu-banner-title">NFORCE  NSBM for Career & Entrepreneurship</h2>
+                <p class="cu-banner-subtitle"><a href="#" class="cu-banner-link">NSBM</a> - NFORCE – NSBM for Career & Entrepreneurship</p>
             </div>
-            <button class="session-btn">Session Calendar</button>
+            <button class="cu-session-btn">Session Calendar</button>
         </div>
 
          <!-- Hero Section -->
-         <section class="hero-section text-center">
-            <div class="container">
-            
+         <section class="cu-hero-section text-center">
+            <div class="cu-container">
+               
                <button class="btn btn-primary btn-lg" onclick="showAppointmentModal()">Book an Appointment</button>
             </div>
 
          </section>
         
         <!-- Ongoing Sessions -->
-        <div class="sessions-card">
-            <h3 class="sessions-title">On Going Sessions</h3>
-            <div class="session-item">
-                <div class="session-name">Mock Interviews: <span class="session-location">Student center A-002</span></div>
-                <div class="session-date">25/03/2025 10.00 am Onwards</div>
-                <button class="details-btn">More Details</button>
+        <div class="cu-sessions-card">
+            <h3 class="cu-sessions-title">On Going Sessions</h3>
+            <div class="cu-session-item">
+                <div class="cu-session-name">Mock Interviews: <span class="cu-session-location">Student center A-002</span></div>
+                <div class="cu-session-date">25/03/2025 10.00 am Onwards</div>
+                <button class="cu-details-btn">More Details</button>
             </div>
         </div>
 
         <!-- Upcoming Sessions -->
-        <div class="sessions-card">
-            <h3 class="sessions-title">Up Coming Sessions</h3>
-            <div class="session-item">
-                <div class="session-name">Industrial Visit: <span class="session-location">Faculty of Business</span></div>
-                <div class="session-date">20/05/2025</div>
-                <button class="details-btn">More Details</button>
+        <div class="cu-sessions-card">
+            <h3 class="cu-sessions-title">Up Coming Sessions</h3>
+            <div class="cu-session-item">
+                <div class="cu-session-name">Industrial Visit: <span class="cu-session-location">Faculty of Business</span></div>
+                <div class="cu-session-date">20/05/2025</div>
+                <button class="cu-details-btn">More Details</button>
             </div>
-            <div class="session-item">
-                <div class="session-name">Career Fair 2025 (Mid): <span class="session-location">Student center A-002</span></div>
-                <div class="session-date">07/07/2025 Time: TBC</div>
-                <button class="details-btn">More Details</button>
+            <div class="cu-session-item">
+                <div class="cu-session-name">Career Fair 2025 (Mid): <span class="cu-session-location">Student center A-002</span></div>
+                <div class="cu-session-date">07/07/2025 Time: TBC</div>
+                <button class="cu-details-btn">More Details</button>
             </div>
         </div>
 
         <!-- Contact Cards -->
-        <div class="contact-container">
-            <div class="contact-card green">
-                <i class="fas fa-user contact-icon"></i>
-                <div class="contact-title">Department Head</div>
-                <div class="contact-info">Ms. Sherien Abeyoonsekara</div>
-                <div class="contact-info">+94 11 544 5067</div>
-                <div class="contact-info">+94 71 672 6007</div>
-                <div class="contact-info">careerguidance@nsbm.ac.lk</div>
+        <div class="cu-contact-container">
+            <div class="cu-contact-card green">
+                <i class="fas fa-user cu-contact-icon"></i>
+                <div class="cu-contact-title">Department Head</div>
+                <div class="cu-contact-info">Ms. Sherien Abeyoonsekara</div>
+                <div class="cu-contact-info">+94 11 544 5067</div>
+                <div class="cu-contact-info">+94 71 672 6007</div>
+                <div class="cu-contact-info">careerguidance@nsbm.ac.lk</div>
             </div>
-            <div class="contact-card blue">
-                <i class="fas fa-phone contact-icon"></i>
-                <div class="contact-title">NFORCE Hotline</div>
-                <div class="contact-info">Mobile/ Whatsapp +94 71 672 6007</div>
-                <div class="contact-info">careerguidance@nsbm.ac.lk</div>
+            <div class="cu-contact-card blue">
+                <i class="fas fa-phone cu-contact-icon"></i>
+                <div class="cu-contact-title">NFORCE Hotline</div>
+                <div class="cu-contact-info">Mobile/ Whatsapp +94 71 672 6007</div>
+                <div class="cu-contact-info">careerguidance@nsbm.ac.lk</div>
             </div>
-            <div class="contact-card green">
-                <i class="fas fa-user-graduate contact-icon"></i>
-                <div class="contact-title">Career Fair Registration</div>
-                <div class="contact-info">careerfair@nsbm.ac.lk</div>
+            <div class="cu-contact-card green">
+                <i class="fas fa-user-graduate cu-contact-icon"></i>
+                <div class="cu-contact-title">Career Fair Registration</div>
+                <div class="cu-contact-info">careerfair@nsbm.ac.lk</div>
             </div>
         </div>
     </div>
 
 
 <!-- CV Upload Section -->
-<section id="cv-upload" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Upload Your CV</h2>
+<section id="cv-upload" class="cu.py-5 bg-light">
+    <div class="cu.container">
+        <h2 class="cu-text-center mb-5">Upload Your CV</h2>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -141,12 +198,12 @@
                                     <option value="other">Other</option>
                                 </select>
                             </div>
-                            <div class="cv-preview mt-4" id="cvPreview">
+                            <div class="cu-cv-preview mt-4" id="cvPreview">
                                 <div class="text-center p-4">
                                     Drag and drop your CV here or use the file input above
                                 </div>
                             </div>
-                            <div class="progress mb-3" id="uploadProgress">
+                            <div class="progress mb-3" id="cu-uploadProgress">
                                 <div class="progress-bar" role="progressbar" style="width: 0%"></div>
                             </div>
                             <div id="uploadStatus" class="alert d-none mb-3"></div>
@@ -194,7 +251,76 @@
         </div>
     </div>
 </div>
- <!-- Footer -->
+
+<!--Footer Start-->
+
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>
+          N-Link <br />
+          <span>NSBM Green University.</span>
+        </h3>
+        <p>
+          Communication Platform for NSBM.<br />
+          NSBM Green University operates as a self-financed university and is
+          renowned for its world-class academic offerings.
+        </p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="Images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="Images/instagram.png"
+              alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="Images/whatsapp.png" alt="WhatsApp"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-section featured-list">
+        <h3>Featured List</h3>
+        <ul>
+          <li><a href="#">Student Dashboard</a></li>
+          <li><a href="#">Academic Dashboard</a></li>
+          <li><a href="#">Appointments</a></li>
+          <li><a href="#">Timetable</a></li>
+          <li><a href="#">Career Guidance Unit</a></li>
+          <li><a href="#">Medical Center</a></li>
+          <li><a href="#">Clubs & Societies</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Admin Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Mahenwaththa, Pitipana, Homagama, Sri Lanka</li>
+          <li><a href="tel:+94115445000">+94 11 544 5000</a></li>
+          <li><a href="tel:+94712445000">+94 71 244 5000</a></li>
+          <li>
+            <a href="mailto:inquiries@nsbm.ac.lk">inquiries@nsbm.ac.lk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        Copyright NSBM 2025. &nbsp; Designed and Developed by Group-75 NSBM
+      </p>
+    </div>
+  </footer>
+
+  <!--Footer end-->
+
+
+
+ <!-- Footer 
  <footer class="footer">
     <div class="container">
         <div class="row">
@@ -232,7 +358,8 @@
     <div class="copyright">
         Copyright NSBM 2025. Designed and Developed by Group-75 NSBM
     </div>
-</footer>
+</footer> 
+-->
 
  <!-- Bootstrap JS Bundle with Popper -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
@@ -240,7 +367,154 @@
  
  <!-- Custom JavaScript -->
  
-     <script src="script.js"></script>
+     <script>
+
+         // Mobile menu toggle
+ document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('cu-menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+ });  
+    // Session Calendar button
+    const sessionBtn = document.querySelector('.cu-session-btn');
+    sessionBtn.addEventListener('click', function() {
+        alert('Opening Session Calendar');
+    });
+    
+    // More Details buttons
+    const detailsBtns = document.querySelectorAll('.cu-details-btn');
+    detailsBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const sessionName = this.parentElement.querySelector('.cu-session-name').textContent;
+            alert('Showing details for: ' + sessionName);
+        });
+    });
+    
+    // Logout button
+    const logoutBtn = document.querySelector('.cu-logout-btn');
+    logoutBtn.addEventListener('click', function() {
+        if (confirm('Are you sure you want to log out?')) {
+            alert('You have been logged out successfully!');
+            
+        }
+    });
+    
+    
+    // Add active class to current navigation item
+    const currentLocation = window.location.href;
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(function(link) {
+        if (link.href === currentLocation) {
+            link.classList.add('active');
+        }
+    });
+
+// Show appointment modal
+function showAppointmentModal() {
+    new bootstrap.Modal(document.getElementById('appointmentModal')).show();
+}
+
+// Handle appointment form submission
+document.getElementById('appointmentForm').onsubmit = function(event) {
+    event.preventDefault();
+    alert('Appointment request received. We will confirm your appointment shortly!');
+    bootstrap.Modal.getInstance(document.getElementById('appointmentModal')).hide();
+    event.target.reset();
+};
+
+// CV Upload functionality
+const cvPreview = document.getElementById('cvPreview');
+const cvFile = document.getElementById('cvFile');
+const uploadProgress = document.getElementById('cu-uploadProgress');
+const uploadStatus = document.getElementById('uploadStatus');
+
+// Drag and drop functionality
+cvPreview.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    cvPreview.classList.add('drag-over');
+});
+
+cvPreview.addEventListener('dragleave', () => {
+    cvPreview.classList.remove('drag-over');
+});
+
+cvPreview.addEventListener('drop', (e) => {
+    e.preventDefault();
+    cvPreview.classList.remove('drag-over');
+    const files = e.dataTransfer.files;
+    if (files.length > 0) {
+        cvFile.files = files;
+        handleFileSelect(files[0]);
+    }
+});
+
+// File input change handler
+cvFile.addEventListener('change', (e) => {
+    if (e.target.files.length > 0) {
+        handleFileSelect(e.target.files[0]);
+    }
+});
+
+// Handle file selection
+function handleFileSelect(file) {
+    const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+    
+    if (!allowedTypes.includes(file.type)) {
+        showUploadStatus('Please upload a PDF, DOC, or DOCX file.', 'danger');
+        return;
+    }
+
+    // Show file name in preview
+    cvPreview.innerHTML = `
+        <div class="p-4">
+            <h5>Selected File:</h5>
+            <p>${file.name}</p>
+            <p>Size: ${(file.size / 1024 / 1024).toFixed(2)} MB</p>
+        </div>
+    `;
+}
+
+// Handle CV upload
+function handleCVUpload(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    
+    // Show progress bar
+    uploadProgress.style.display = 'block';
+    let progress = 0;
+    
+    // Simulate upload progress
+    const progressInterval = setInterval(() => {
+        progress += 10;
+        uploadProgress.querySelector('.progress-bar').style.width = `${progress}%`;
+        
+        if (progress >= 100) {
+            clearInterval(progressInterval);
+            uploadProgress.style.display = 'none';
+            showUploadStatus('CV uploaded successfully! Our team will review it shortly.', 'success');
+            event.target.reset();
+            cvPreview.innerHTML = '<div class="text-center p-4">Drag and drop your CV here or use the file input above</div>';
+        }
+    }, 200);
+
+    return false;
+}
+
+// Show upload status message
+function showUploadStatus(message, type) {
+    uploadStatus.className = `alert alert-${type}`;
+    uploadStatus.textContent = message;
+    uploadStatus.classList.remove('d-none');
+    
+    setTimeout(() => {
+        uploadStatus.classList.add('d-none');
+    }, 5000);
+}
+
+     </script>
  
 </body>
 </html>
