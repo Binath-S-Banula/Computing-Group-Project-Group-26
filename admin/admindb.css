@@ -1,0 +1,212 @@
+:root {
+  --primary-gradient-start: #1e5631;
+  --primary-gradient-end: #3a8c5f;
+  --secondary-gradient-start: #0d6e37;
+  --secondary-gradient-end: #3fa35c;
+  --hover-gradient-start: #0a552a;
+  --hover-gradient-end: #2c7340;
+  --text-color: #2e4a2e;
+  --border-color: #bce3cc;
+  --input-bg: #f5fff7;
+  --shadow-color: rgba(30, 86, 49, 0.25);
+  --hover-shadow-color: rgba(30, 86, 49, 0.35);
+  --accent-color: #ff9a3c;
+  --light-accent: #fff2e6;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fbf9;
+  color: var(--text-color);
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.dashboard-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.action-button {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-gradient-start),
+    var(--secondary-gradient-end)
+  );
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background: linear-gradient(
+    135deg,
+    var(--hover-gradient-start),
+    var(--hover-gradient-end)
+  );
+  box-shadow: 0 6px 8px var(--hover-shadow-color);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.stats-card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: var(--primary-gradient-end);
+  margin-bottom: 1rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.faculty-card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.faculty-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
+  padding: 1rem 1.5rem;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faculty-body {
+  padding: 1.5rem;
+}
+
+.degree-item {
+  background-color: var(--input-bg);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid var(--secondary-gradient-end);
+  transition: all 0.3s ease;
+}
+
+.degree-item:hover {
+  background-color: var(--light-accent);
+  border-left-color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.add-degree-btn {
+  background-color: transparent;
+  border: 2px dashed var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.add-degree-btn:hover {
+  background-color: var(--input-bg);
+  border-color: var(--secondary-gradient-end);
+  color: var(--secondary-gradient-end);
+}
+
+.action-section {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.action-section h4 {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.action-card {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.action-card:hover {
+  background-color: var(--light-accent);
+  transform: translateY(-5px);
+}
+
+.action-icon {
+  font-size: 2rem;
+  color: var(--secondary-gradient-end);
+  margin-bottom: 1rem;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #dc3545, #b02a37);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(220, 53, 69, 0.25);
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #c82333, #a01e2c);
+  box-shadow: 0 6px 8px rgba(220, 53, 69, 0.35);
+  transform: translateY(-2px);
+  color: white;
+}
